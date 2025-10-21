@@ -1,10 +1,10 @@
 console.log("Hello this is todo website");
-// Selecting dom element
+// SEC: Selecting dom element
 const input = document.getElementById("todo-input");
 const addBtn = document.getElementById("add-btn");
 const list = document.getElementById("todo-list");
 
-// Try to load save todos from localStorage (if any)
+// SEC: Try to load save todos from localStorage (if any)
 const saved = localStorage.getItem("todos");
 const todos = saved ? JSON.parse(saved) : [];
 
@@ -13,11 +13,11 @@ function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// Create a dom node for a demo object and append it to the list
+// SEC: Create a dom node for a demo object and append it to the list
 function createTodoNode(todo, index) {
   const li = document.createElement("li");
 
-  //Checkbox to toggle completion
+  // SUB: Checkbox to toggle completion
   const checkbox = document.createElement("input");
   checkbox.classList.add("checkbox");
   checkbox.type = "checkbox";
@@ -62,7 +62,7 @@ function createTodoNode(todo, index) {
   li.appendChild(delBtn);
   return li;
 }
-// Render the whole todo list from todos array
+// FUNC: Render the whole todo list from todos array
 
 function render() {
   list.innerHTML = "";

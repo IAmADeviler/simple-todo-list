@@ -83,11 +83,11 @@ li {
 .text-span {
   max-width: 60%;
   overflow-wrap: anywhere;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 input[type="checkbox"] {
-  min-width: 20px;
-  height: 20px;
+  min-width: 30px;
+  height: 30px;
   margin-right: 3vw;
 }
 
